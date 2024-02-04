@@ -7,24 +7,57 @@ UCIDs : 30184369, 30171412
 Submission : Feb 5, 2024
 File description : The login page
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
--->
-
-<!--
-Requirements:
-• Create a login page with HTML.
-• Include a form with fields for username and password
--->
-
-<!--
-Place the following elements in your HTML at these specific locations and do not change the
-order:
-• <header>: This is where your website's logo and name should be placed. The logo should
-be placed at the left and name should be placed right after the logo.
-• <div>: The navigation links to other pages (home.html, products.html, contact.html, and
-login.html) are placed directly below the header.
-• <main>: Below the navigation bar, where the login form, including username, password
-fields, and a "Login" button, should be placed. This button will not have any functionality
-at this moment. Password should be masked. You also need to include a link to sign up
-page for new users. Do not need to create a web page for signup at this point.
-• <footer>: Add a footer with a copyright notice at the bottom of your page.
--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Stop Car Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Logo and website name go here -->
+        <img src="logo.png" alt="Company Logo">
+        <h1>One-Stop Car Shop</h1>
+    </header>
+    <div>
+        <style>
+            nav {
+                margin-bottom: 30px; /* Adjusting the value for space */
+            }
+        
+            .login-form {
+                margin-top: 30px; /* Adjust the value as needed */
+            }
+        </style>
+        
+        <!-- Navigation links go here -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </div>
+    <main>
+        <!-- Login Form Section -->
+        <section class="login-form">
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder= "Enter your username">
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder= "Enter your password">
+                <br>
+                <button type="submit">Login</button>
+            </form>
+            <p>New user? <a href="#">Sign Up</a></p>
+        </section>
+    </main>
+    <footer>
+        <!-- Copyright notice goes here -->
+        <p>&copy; 2024 One-Stop Car Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
